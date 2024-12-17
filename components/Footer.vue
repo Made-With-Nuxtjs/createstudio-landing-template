@@ -18,31 +18,45 @@
                 </div>
 
                 <!-- Links Section -->
-                <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16 text-gray-300/75  md:lg:xl:basis-1/2">
+                <div
+                    class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16 text-gray-200/50  md:lg:xl:basis-1/2">
                     <div>
-                        <h3 class="text-2xl font-bold mb-4">Resources</h3>
-                        <ul class="space-y-2">
-                            <li>CreateStudio Blog</li>
-                            <li>CreateStudio FB Group</li>
-                            <li>YouTube Channel</li>
+                        <div class="flex justify-between">
+                            <h3 class="text-2xl font-bold mb-4">Resources</h3>
+                            <Icon @click="openResource" class="h-10 w-10 md:lg:xl:hidden" :name="resources_arrow ? 'material-symbols-light:keyboard-arrow-up' : 'material-symbols-light:keyboard-arrow-down'"
+                                style="color: white" />
+                        </div>
+                        <ul :class="resources_arrow ? 'space-y-3 text-xl' : 'space-y-3 text-xl hidden md:lg:xl:inline' ">
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">CreateStudio Blog</a></li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">CreateStudio FB Group</a>
+                            </li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">YouTube Channel</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold mb-4">Support</h3>
-                        <ul class="space-y-2 text-xl text-gray-800/75">
-                            <li class="">Knowledgebase</li>
-                            <li>Support Desk</li>
-                            <li>Tutorials</li>
-                            <li>Contact Us</li>
+                        <div class="flex justify-between">
+                            <h3 class="text-2xl font-bold mb-4">Support</h3>
+                            <Icon @click="openSupport" class="h-10 w-10 md:lg:xl:hidden" :name="support_arrow ? 'material-symbols-light:keyboard-arrow-up' : 'material-symbols-light:keyboard-arrow-down'"
+                                style="color: white" />
+                        </div>
+                        <ul :class="support_arrow ? 'space-y-3 text-xl' : 'space-y-3 text-xl hidden md:lg:xl:inline' ">
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Knowledgebase</a></li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Support Desk</a></li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Tutorials</a></li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Contact Us</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold mb-4">Legal</h3>
-                        <ul class="space-y-2">
-                            <li>Privacy Policy</li>
-                            <li>Terms of Use</li>
-                            <li>Disclaimer</li>
-                            <li>Cookie Policy</li>
+                        <div class="flex justify-between">
+                            <h3 class="text-2xl font-bold mb-4">Legal</h3>
+                            <Icon @click="openLegal" class="h-10 w-10 md:lg:xl:hidden" :name="legal_arrow ? 'material-symbols-light:keyboard-arrow-up' : 'material-symbols-light:keyboard-arrow-down'"
+                                style="color: white" />
+                        </div>
+                        <ul :class="legal_arrow ? 'space-y-3 text-xl' : 'space-y-3 text-xl hidden md:lg:xl:inline' ">
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Privacy Policy</a></li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Terms of Use</a></li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Disclaimer</a></li>
+                            <li class="text-gray-800/75 hover:text-gray-300/75"><a href="/">Cookie Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -77,6 +91,23 @@
                 </p>
             </div>
         </div>
-
     </div>
 </template>
+
+<script setup lang="ts">
+const resources_arrow = ref(false)
+const support_arrow = ref(false)
+const legal_arrow = ref(false)
+
+ function openResource(){
+    resources_arrow.value = !resources_arrow.value
+ }
+
+ function openSupport(){
+    support_arrow.value = !support_arrow.value
+ }
+ 
+ function openLegal(){
+    legal_arrow.value = !legal_arrow.value
+ }
+</script>

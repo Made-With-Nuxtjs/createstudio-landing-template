@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.left-avatar-rotate{
+    rotate: 30deg;
+}
+
+.right-avatar-rotate{
+    rotate: -30deg;
+}
+
+
+
+/* .h1{--font-selector: Q1VTVE9NO0Flb25payBCb2xk; --framer-font-family: &quot;Aeonik Bold&quot;, &quot;Aeonik Bold Placeholder&quot;, sans-serif; --framer-font-size: 64px; --framer-letter-spacing: -1.7px; --framer-line-height: 1.16em; --framer-text-alignment: center; --framer-text-color: rgb(31, 31, 31);} */
