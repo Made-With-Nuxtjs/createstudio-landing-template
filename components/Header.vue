@@ -1,6 +1,7 @@
 <template>
     <!-- Top Section -->
     <div class=" bg-violet-600 sticky top-0 z-40">
+        <!-- <NuxtImg src="/img/" title="head-bg" alt="header-bg-image" /> -->
         <div class="flex flex-col md:lg:xl:flex-row gap-2 md:lg:xl:gap-8 px-2 pt-1 md:lg:xl:pt-0 justify-center">
             <div>
                 <h4 class="text-gray-50 p-1 text-center text-lg font-semibold"><span class="font-bold">New CreateStudio

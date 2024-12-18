@@ -5,6 +5,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],  // Use Roboto for the default sans-serif font
+        custom:['"Bowlby One", serif'],
+        custom_1:['Gochi Hand'],
+        custom_2:['Archivo Black', 'serif'],
       },
     },
   },
