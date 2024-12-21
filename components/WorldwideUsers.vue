@@ -1,24 +1,25 @@
 <template>
 
     <div class="container mx-auto p-8">
-        <div class="flex justify-between py-8">
+        <div class="flex flex-col md:lg:xl:flex-row justify-between py-8">
             <div class="basis-1/3 w-full">
-                <h2 class="text-5xl font-bold text-gray-950/75">Trusted by 60,000+ users worldwide</h2>
+                <h2 class="text-3xl md:lg:xl:text-5xl font-bold text-gray-950 text-center py-6">Trusted by 60,000+ users
+                    worldwide</h2>
             </div>
             <div class="basis-1/2">
-                <div class="flex gap-16">
-                    <div class="flex-col">
+                <div class="flex flex-col md:lg:xl:flex-row gap-16">
+                    <div class="flex-col justify-center items-center">
                         <div>
                             <h1 class="text-6xl text-center font-bold text-gray-800">4.8</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex justify-center items-center">
                             <Icon name="material-symbols-light:star" style="color:skyblue" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:skyblue" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:skyblue" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:skyblue" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:skyblue" class="w-5 h-5" />
                         </div>
-                        <div class="flex justify-start">
+                        <div class="flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 344.983"
                                 style="width: 96px; height: 32px;">
                                 <path d="m8.905 127.38 135.181.027 82.199.014v-81.434z" fill="#ff9d28" />
@@ -35,10 +36,10 @@
                         <div>
                             <h1 class="text-6xl text-center font-bold text-gray-800">40K</h1>
                         </div>
-                        <div class="flex items-center">
+                        <div class="flex justify-center items-center">
                             <p class="text-md font-bold text-end">Customers</p>
                         </div>
-                        <div class="flex justify-start">
+                        <div class="flex justify-center items-center">
                             <p class="text-sm font-bold"><span class="text-lg font-bold">170</span> Countries</p>
                         </div>
                     </div>
@@ -46,7 +47,7 @@
                         <div>
                             <h1 class="text-6xl text-center font-bold text-gray-800">#1</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex justify-center items-center">
                             <p class="text-sm font-bold w-48">Highest Rated Video Maker</p>
                         </div>
                         <div class="flex justify-center">
@@ -67,7 +68,7 @@
                         <div>
                             <h1 class="text-6xl text-center font-bold text-gray-800">4.8</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex justify-center items-center">
                             <Icon name="material-symbols-light:star" style="color:green" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:green" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:green" class="w-5 h-5" />
@@ -84,7 +85,7 @@
                         <div>
                             <h1 class="text-6xl text-center font-bold text-gray-800">4.8</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex justify-center items-center">
                             <Icon name="material-symbols-light:star" style="color:#ef492d" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:#ef492d" class="w-5 h-5" />
                             <Icon name="material-symbols-light:star" style="color:#ef492d" class="w-5 h-5" />
@@ -99,69 +100,87 @@
             </div>
         </div>
 
-        <div class="flex gap-8 py-8">
-            <div class="basis-1/3">
-                <div class="flex-col space-y-8">
-                    <div class="bg-gray-950 h-80 rounded-xl p-8">
-                        <h1 class="text-4xl text-[#6fd55d] font-bold text-center font-custom uppercase">
+        <div class="flex flex-col gap-8 py-8 md:flex-row">
+            <!-- First Column -->
+            <div class="w-full md:basis-1/3">
+                <div class="flex flex-col space-y-8">
+                    <!-- Award Winning Video Software -->
+                    <div class="bg-gray-950 h-auto rounded-xl p-4 md:lg:xl:p-8">
+                        <h1 class="text-3xl md:lg:xl:text-4xl text-[#6fd55d] font-bold text-center font-custom uppercase">
                             Award Winning Video Software
                         </h1>
-                        <div class="flex gap-8 p-8">
-                            <div class="w-[100px]">
+                        <div class="flex justify-start gap-4 md:gap-8 p-8">
+                            <div class="w-16 md:w-[100px]">
                                 <NuxtImg src="https://placehold.co/100" title="Award" alt="award" class="w-full" />
                             </div>
-                            <div class="w-[100px]">
+                            <div class="w-16 md:w-[100px]">
                                 <NuxtImg src="https://placehold.co/100" title="Award" alt="award" class="w-full" />
                             </div>
                         </div>
                     </div>
 
+                    <!-- Reviews Section -->
                     <div class="bg-cyan-400 rounded-xl p-8">
-                        <div class="flex-row">
-                            <Icon class="h-9 w-9" name="material-symbols-light:star-rounded" style="color: yellow" />
-                            <Icon class="h-9 w-9" name="material-symbols-light:star-rounded" style="color: yellow" />
-                            <Icon class="h-9 w-9" name="material-symbols-light:star-rounded" style="color: yellow" />
-                            <Icon class="h-9 w-9" name="material-symbols-light:star-rounded" style="color: yellow" />
-                            <Icon class="h-9 w-9" name="material-symbols-light:star-rounded" style="color: yellow" />
+                        <div class="flex justify-start mb-4">
+                            <Icon class="h-7 w-7 md:h-9 md:w-9" name="material-symbols-light:star-rounded"
+                                style="color: yellow" />
+                            <Icon class="h-7 w-7 md:h-9 md:w-9" name="material-symbols-light:star-rounded"
+                                style="color: yellow" />
+                            <Icon class="h-7 w-7 md:h-9 md:w-9" name="material-symbols-light:star-rounded"
+                                style="color: yellow" />
+                            <Icon class="h-7 w-7 md:h-9 md:w-9" name="material-symbols-light:star-rounded"
+                                style="color: yellow" />
+                            <Icon class="h-7 w-7 md:h-9 md:w-9" name="material-symbols-light:star-rounded"
+                                style="color: yellow" />
                         </div>
-                        <h1 class="text-4xl font-bold text-gray-50">
+                        <h1 class="text-2xl md:text-4xl font-bold text-gray-50">
                             1,200+ Reviews
                         </h1>
                         <div class="flex -space-x-4 py-8">
                             <NuxtImg alt="Person 1 smiling outdoors"
-                                class="w-12 h-12 rounded-full border-2 border-gray-50" src="https://placehold.co/32" />
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gray-50"
+                                src="https://placehold.co/32" />
                             <NuxtImg alt="Person 2 smiling outdoors"
-                                class="w-12 h-12 rounded-full border-2 border-gray-50" src="https://placehold.co/32" />
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gray-50"
+                                src="https://placehold.co/32" />
                             <NuxtImg alt="Person 3 smiling outdoors"
-                                class="w-12 h-12 rounded-full border-2 border-gray-50" src="https://placehold.co/32" />
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gray-50"
+                                src="https://placehold.co/32" />
                             <NuxtImg alt="Person 4 smiling outdoors"
-                                class="w-12 h-12 rounded-full border-2 border-gray-50" src="https://placehold.co/32" />
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gray-50"
+                                src="https://placehold.co/32" />
                             <NuxtImg alt="Person 5 smiling outdoors"
-                                class="w-12 h-12 rounded-full border-2 border-gray-50" src="https://placehold.co/32" />
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gray-50"
+                                src="https://placehold.co/32" />
                         </div>
-                        <h2 class="text-gray-50/75 text-xl font-bold">See Reviews</h2>
+                        <h2 class="text-gray-50/75 text-lg md:text-xl font-bold">See Reviews</h2>
                     </div>
                 </div>
             </div>
 
-
-            <div class="basis-1/3">
-                <div class="bg-gray-400 h-full rounded-xl">
-
+            <!-- Second Column -->
+            <div class="w-full md:basis-1/3">
+                <div class="bg-gray-400 h-full rounded-xl flex items-center justify-center">
+                    <h2 class="text-3xl md:text-4xl font-bold p-8 text-center">This is the new text</h2>
                 </div>
             </div>
-            <div class="basis-1/3">
-                <div class="bg-blue-600 h-full rounded-xl">
-                    <NuxtImg alt="worldwideuser-image" title="world wide user" src="/img/worldwideuser.avif" />
-                    <h1 class="text-4xl font-bold text-gray-50 px-8">
+
+            <!-- Third Column -->
+            <div class="w-full md:basis-1/3">
+                <div class="bg-blue-600 h-full rounded-xl p-8">
+                    <NuxtImg alt="worldwideuser-image" title="world wide user" src="/img/worldwideuser.avif"
+                        class="w-full rounded-md mb-4" />
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-50">
                         30,000+ Facebook Community
                     </h1>
-                    <div class="flex items-center py-8">
-                        <NuxtImg alt="worldwideuser-image" title="world wide user" class="h-12 w-20" src="/img/fb.png" />
-                        <h4 class="text-2xl font-bold text-gray-300/75">Join Facebook Group</h4>
+                    <div class="flex items-center gap-4 py-8">
+                        <NuxtImg alt="worldwideuser-image" title="world wide user"
+                            class="h-10 w-16 md:lg:xl:h-12 md:lg:xl:w-20 rounded-md" src="/img/fb.png" />
+                        <h4 class="text-lg md:text-2xl font-bold text-gray-300/75">Join Facebook Group</h4>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </template>

@@ -1,7 +1,6 @@
 <template>
     <!-- Top Section -->
-    <div class=" bg-violet-600 sticky top-0 z-40">
-        <!-- <NuxtImg src="/img/" title="head-bg" alt="header-bg-image" /> -->
+    <div class="bg-violet-600 sticky top-0 z-30">
         <div class="flex flex-col md:lg:xl:flex-row gap-2 md:lg:xl:gap-8 px-2 pt-1 md:lg:xl:pt-0 justify-center">
             <div>
                 <h4 class="text-gray-50 p-1 text-center text-lg font-semibold"><span class="font-bold">New CreateStudio
@@ -16,6 +15,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- Navigation -->
     <div class="container mx-auto p-4">
         <div class="flex justify-between items-center">
@@ -32,7 +33,8 @@
             <!-- Desktop Menu -->
             <div class="hidden md:flex gap-4 items-center">
                 <button class="hover:bg-gray-200 px-2 py-1 rounded-lg text-gray-950 font-bold">Learn</button>
-                <button class="flex justify-center items-center hover:bg-gray-200 pl-2 py-1 rounded-lg text-gray-950 font-bold">Support
+                <button
+                    class="flex justify-center items-center hover:bg-gray-200 pl-2 py-1 rounded-lg text-gray-950 font-bold">Support
                     <Icon v-if="!isMenuOpen" name="material-symbols-light:keyboard-arrow-down" style="color: black"
                         class="h-6 w-6" />
                 </button>
@@ -57,10 +59,31 @@
         <!-- Mobile Menu -->
         <div v-if="isMenuOpen" class="md:hidden bg-white w-full transition-transform duration-500 shadow-sm">
             <div class="p-2 space-y-2">
-                <a href="#" class="block px-4 py-2 font-bold rounded-lg text-gray-700 hover:bg-gray-200">Learn</a>
-                <a href="#" class="block px-4 py-2 font-bold rounded-lg text-gray-700 hover:bg-gray-200">Support</a>
+                <button class="block px-4 py-1 font-bold rounded-lg text-gray-700 bg-gray-200">Learn</button>
+                <a href="#" class="flex items-center gap-2 px-4 py-1 font-bold rounded-lg text-gray-700 bg-gray-200">Support
+                    <Icon name="material-symbols-light:keyboard-arrow-up" style="color: black" class="h-6 w-6" />
+
+                </a>
+                <ul class="p-4 space-y-6">
+                    <li><a href="/" class="flex items-center font-bold gap-2">
+                            <Icon name="material-symbols-light:library-books-outline-sharp" style="color: black"
+                                class="h-8 w-8" />
+                            KnowledgeBase
+                        </a></li>
+                        <li><a href="/" class="flex items-center font-bold gap-2">
+                            <Icon name="material-symbols-light:mail-outline" style="color: black"
+                                class="h-8 w-8" />
+                                Support Desk
+                        </a></li>
+                        <li><a href="/" class="flex items-center font-bold gap-2">
+                            <Icon name="material-symbols-light:chat-outline-sharp" style="color: black"
+                                class="h-8 w-8" />
+                                Live Chat
+                        </a></li>
+                </ul>
                 <div class="pt-8 pb-4">
-                    <a href="#" class="px-4 py-1 text-center rounded-lg bg-sky-500 text-white font-bold hover:bg-sky-400">
+                    <a href="#"
+                        class="px-4 py-1 text-center rounded-lg bg-sky-500 text-white font-bold hover:bg-sky-400">
                         Buy now
                     </a>
                 </div>

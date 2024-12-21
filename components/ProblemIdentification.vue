@@ -1,11 +1,10 @@
 <template>
     <div class="container mx-auto py-24">
-        <div class="flex">
-            <h2 class="text-2xl font-bold text-blue-400 font-custom_1 rotate-145">But the problem is…</h2>
-        </div>
-        <div>
-            <h1 class="text-5xl font-bold text-center"> Creating 3D animated videos is complicated, <br> crazy expensive
+        <div class="relative">
+            <h2 class="text-3xl font-bold text-blue-400 font-custom_1 problem-text text-center md:lg:xl:hidden pb-8">But the problem is…</h2>
+            <h1 class="text-3xl md:lg:xl:text-5xl font-bold text-center px-8"> Creating 3D animated videos is complicated, <br> crazy expensive
                 & time consuming 😫</h1>
+                <h2 class="text-4xl font-bold text-blue-400 font-custom_1 problem-text hidden md:lg:xl:flex absolute left-[150px] top-[-40px]">But the problem is…</h2>
         </div>
         <div class="flex flex-wrap gap-16 justify-center items-center py-16">
             <!-- First Card -->
@@ -14,8 +13,8 @@
                     <NuxtImg src="https://placehold.co/400x250" title="Traditional 3D Software" alt="3d-image"
                         class="w-full h-auto" />
                     <div class="py-6">
-                        <h2 class="text-3xl font-bold text-gray-700">Traditional 3D Software?</h2>
-                        <p class="text-3xl font-custom_1">(Requires a PHD to use)</p>
+                        <h2 class="text-2xl md:lg:xl:text-3xl font-bold text-gray-700">Traditional 3D Software?</h2>
+                        <p class="text-2xl md:lg:xl:text-3xl font-custom_1">(Requires a PHD to use)</p>
                     </div>
                 </div>
             </div>
@@ -26,8 +25,8 @@
                     <NuxtImg src="https://placehold.co/400x250" title="Expensive 3D Animators" alt="3d-image"
                         class="w-full h-auto" />
                     <div class="py-6">
-                        <h2 class="text-3xl font-bold text-gray-700">Expensive 3D Animators?</h2>
-                        <p class="text-3xl font-custom_1">(Will cost $30k per video)</p>
+                        <h2 class="text-2xl md:lg:xl:text-3xl font-bold text-gray-700">Expensive 3D Animators?</h2>
+                        <p class="text-2xl md:lg:xl:text-3xl font-custom_1">(Will cost $30k per video)</p>
                     </div>
                 </div>
             </div>
@@ -38,8 +37,8 @@
                     <NuxtImg src="https://placehold.co/400x250" title="Expensive 3D Animators" alt="3d-image"
                         class="w-full h-auto" />
                     <div class="py-6">
-                        <h2 class="text-3xl font-bold text-gray-700">Expensive 3D Animators?</h2>
-                        <p class="text-3xl font-custom_1">(Will cost $30k per video)</p>
+                        <h2 class="text-2xl md:lg:xl:text-3xl font-bold text-gray-700">Expensive 3D Animators?</h2>
+                        <p class="text-2xl md:lg:xl:text-3xl font-custom_1">(Will cost $30k per video)</p>
                     </div>
                 </div>
             </div>
@@ -48,8 +47,8 @@
         <div class="flex justify-center">
             <h3 class="text-4xl text-center text-blue-500 font-custom_1">What if there was a better way?</h3>
         </div>
-        <div class="px-32 py-16">
-            <div class="flex justify-center items-center px-48">
+        <div class="px-8 md:lg:xl:px-32 py-16">
+            <div class="flex justify-center items-center md:lg:xl:px-48">
                 <div class="flex-col space-y-8">
                     <p class="text-2xl">
                         To <span class="font-bold">easily create 3D animated videos</span> in <span
@@ -71,7 +70,7 @@
                 </div>
                 <div>
                     <NuxtImg src="/img/solution.avif" title="solution" alt="solution-image"
-                        class="w-full" />
+                        class="w-full hidden md:lg:xl:flex" />
                 </div>
             </div>
         </div>

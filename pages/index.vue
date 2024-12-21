@@ -23,21 +23,22 @@ function stateChange(event: { data: number; }) {
             <div class="container mx-auto">
                 <div class="flex md:lg:xl:flex-row flex-col justify-center gap-1 items-center">
                     <div class="flex space-x-1">
-                        <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
+                        <a class="rounded-xs bg-emerald-500 h-5 w-5 flex justify-center items-center" href="/">
                             <Icon class="h-6 w-6" name="material-symbols-light:star-rate" style="color: white" />
                         </a>
-                        <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
+                        <a class="rounded-xs bg-emerald-500 h-5 w-5 flex justify-center items-center" href="/">
                             <Icon class="h-6 w-6" name="material-symbols-light:star-rate" style="color: white" />
                         </a>
-                        <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
+                        <a class="rounded-xs bg-emerald-500 h-5 w-5 flex justify-center items-center" href="/">
                             <Icon class="h-6 w-6" name="material-symbols-light:star-rate" style="color: white" />
                         </a>
-                        <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
+                        <a class="rounded-xs bg-emerald-500 h-5 w-5 flex justify-center items-center ml-3" href="/">
                             <Icon class="h-6 w-6" name="material-symbols-light:star-rate" style="color: white" />
                         </a>
                     </div>
                     <div>
-                        <p class="text-xl font-semibold px-2 text-center"> <span class="font-bold">TrustPilot</span>
+                        <p class="text-lg px-2 text-center"> <span class="font-bold">TrustPilot</span> <br
+                                class="md:lg:xl:hidden" />
                             4.8. out
                             of 5 on 650+
                             reviews
@@ -46,7 +47,7 @@ function stateChange(event: { data: number; }) {
                 </div>
                 <div class="flex justify-center p-2 md:p-8">
                     <h2
-                        class="text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-center leading-relaxed md:leading-loose">
+                        class="text-4xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-center  md:lg:xl:leading-loose px-8">
                         Easily Create 3D Animated <br class="hidden sm:block"> Videos in Just Minutes
                     </h2>
                 </div>
@@ -96,130 +97,135 @@ function stateChange(event: { data: number; }) {
                 </div>
             </div>
 
-
+            <!-- New Section -->
             <div class="relative overflow-auto">
-                <div class="bg-indigo-600 blur-xs m-2 md:lg:xl:m-8 rounded-3xl py-8">
-                    <NuxtImg src="/img/section1_outer_left.avif" class="w-64 h-64 opacity-25 absolute top-16 left-0"
-                        style="backdrop-filter: blur(5px);" title="bg-blur" alt="image" />
-                    <div class="flex justify-center">
-                        <div class="basis-1/4 p-8 h-[400px] w-[600px]">
-                            <NuxtImg src="/img/section1.avif" class="w-full" title="product" alt="image" />
+                <!-- Background Container -->
+                <div class="bg-indigo-600 blur-xs m-2 md:m-8 rounded-3xl py-8 relative">
+                    <!-- Left Decorative Image -->
+                    <NuxtImg src="/img/section1_outer_left.avif"
+                        class="w-32 h-32 md:w-64 md:h-64 opacity-25 absolute top-16 left-0"
+                        style="backdrop-filter: blur(50px);" title="bg-blur" alt="image" />
+
+                    <!-- Main Content -->
+                    <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center p-4">
+                        <!-- Left Section: Product Image -->
+                        <div class="flex justify-center basis-full md:basis-1/2 lg:basis-1/3">
+                            <NuxtImg src="/img/section1.avif" class="w-[300px] md:w-[400px] lg:w-[600px] h-auto"
+                                title="product" alt="image" />
                         </div>
-                        <div class="flex-col basis-1/4 justify-center items-center pt-8">
-                            <p class="text-xl text-gray-400 text-center font-bold">
-                                Limited-time lifetime deal <br>
+
+                        <!-- Right Section: Text and Features -->
+                        <div
+                            class="basis-full md:basis-1/2 lg:basis-1/3 flex flex-col justify-center items-center text-center space-y-1 order-first md:lg:xl:order-last">
+                            <p class="text-xl md:lg:xl:text-2xl text-gray-400 font-bold">
+                                Limited-time lifetime deal <br />
                                 Usually $197/year
                             </p>
-                            <h1 class="text-5xl text-gray-50 font-bold text-center">Today: ONLY $67!</h1>
-                            <h2 class="text-3xl text-gray-50 font-bold text-center p-4">( Pay Once, Use Forever)!</h2>
+                            <h1 class="text-5xl md:lg:xl:text-6xl text-gray-50 font-custom_3 uppercase">Today: ONLY $67!</h1>
+                            <h2 class="text-4xl md:lg:xl:text-3xl text-gray-50 font-bold p-4">
+                                (Pay Once, Use Forever)!
+                            </h2>
                             <div class="flex justify-center">
                                 <div
-                                    class="p-4 cursor-pointer rounded-lg transition ease-in-out delay-150 bg-[#ff1e1e] hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300">
-                                    <p class="text-gray-50 text-2xl font-bold">Get CreateStudio Lifetime</p>
+                                    class="p-4 cursor-pointer rounded-lg bg-[#ff1e1e] transition transform hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300">
+                                    <p class="text-gray-50 text-xl md:lg:xl:text-2xl font-bold">Get CreateStudio Lifetime</p>
                                 </div>
                             </div>
-                            <h6 class="text-xl text-gray-400 font-bold text-center p-4">Risk-Free 30 Day Money Back
-                                Guarantee</h6>
-                            <div class="flex-col justify-center gap-1 items-center">
+                            <h6 class="text-base md:text-xl text-gray-400 font-bold p-4">
+                                Risk-Free 30 Day Money Back Guarantee
+                            </h6>
+
+                            <!-- Rating Section -->
+                            <div class="flex flex-col justify-center items-center space-y-2">
                                 <div class="flex space-x-1 justify-center">
-                                    <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
-                                        <Icon class="h-6 w-6" name="material-symbols-light:star-rate"
-                                            style="color: white" />
-                                    </a>
-                                    <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
-                                        <Icon class="h-6 w-6" name="material-symbols-light:star-rate"
-                                            style="color: white" />
-                                    </a>
-                                    <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
-                                        <Icon class="h-6 w-6" name="material-symbols-light:star-rate"
-                                            style="color: white" />
-                                    </a>
-                                    <a class="rounded-xs bg-teal-600 h-5 w-5 flex justify-center items-center" href="/">
+                                    <a v-for="index in 4" :key="index"
+                                        class="rounded-xs bg-teal-600 h-4 w-4 md:lg:xl:h-5 md:lg:xl:w-5 flex justify-center items-center"
+                                        href="/">
                                         <Icon class="h-6 w-6" name="material-symbols-light:star-rate"
                                             style="color: white" />
                                     </a>
                                 </div>
-                                <div>
-                                    <p class="text-xl font-semibold text-gray-200 px-2 text-center"> <span
-                                            class="font-bold">TrustPilot</span>
-                                        4.8. out
-                                        of 5 on 650+
-                                        reviews
+                                <p class="text-sm md:text-xl font-semibold text-gray-200">
+                                    <span class="font-bold">TrustPilot</span> 4.8 out of 5 on 650+ reviews
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="flex flex-wrap gap-4 justify-center py-8 px-4">
+                        <div class="flex flex-col md:flex-row md:space-x-8 lg:space-x-16 gap-1 md:gap-4">
+                            <div class="md:lg:xl:space-y-4">
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">3D Character Creator</p>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">Unlimited Video Exports</p>
+                                </div>
+                            </div>
+
+                            <div class="md:lg:xl:space-y-4">
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">Automatic Lipsyncing</p>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">Doodle Video Creator</p>
+                                </div>
+                            </div>
+
+                            <div class="md:lg:xl:space-y-4">
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">Commercial Use License</p>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">Easy to use</p>
+                                </div>
+                            </div>
+
+                            <div class="md:lg:xl:space-y-4">
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">Drag & Drop Editor</p>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <Icon class="h-8 w-8 rounded-full"
+                                        name="material-symbols-light:check-circle-outline-rounded"
+                                        style="color: indigo" />
+                                    <p class="text-lg md:lg:xl:text-xl font-bold text-gray-300">Scroll Stopping Video Ads
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <div class="flex flex-wrap gap-1 md:lg:xl:gap-4 justify-center py-8">
-                            <div class="flex gap-8 items-center">
-                                <div class="flex-col space-y-4">
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">3D Character Creator</p>
-                                    </div>
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">Unlimited Video Exports</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex-col space-y-4">
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">Automatic Lipsyncing</p>
-                                    </div>
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">Doodle Video Creator</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex-col space-y-4">
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">Commercial Use License</p>
-                                    </div>
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">Easy to use</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex-col space-y-4">
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">Drag & Drop Editor</p>
-                                    </div>
-                                    <div class="flex gap-2">
-                                        <Icon class="h-8 w-8 font-bold rounded-full"
-                                            name="material-symbols-light:check-circle-outline-rounded"
-                                            style="color: indigo" />
-                                        <p class="text-lg font-bold text-gray-300">Scroll Stopping Video Ads</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <NuxtImg src="/img/section1_right.avif" class="w-64 h-64 opacity-25 absolute top-16 right-0"
+                    <!-- Right Decorative Image -->
+                    <NuxtImg src="/img/section1_right.avif"
+                        class="w-32 h-32 md:w-64 md:h-64 opacity-25 absolute top-16 right-0"
                         style="backdrop-filter: blur(5px);" title="bg-blur" alt="image" />
                 </div>
             </div>
+
+
         </section>
 
         <!-- worldwide users section -->
@@ -241,19 +247,15 @@ function stateChange(event: { data: number; }) {
         <section>
             <TheBrandNew />
         </section>
-
-        <section class="h-[1250px]">
-
+  <!-- See how easy it is for yourself section -->
+        <section>
+            <SeeHowEasy />
         </section>
-         <!-- Simple Steps section -->
-         <section>
+        <!-- Simple Steps section -->
+        <section>
             <SimpleSteps />
         </section>
 
-        <!-- Build Explainers in Minutes! section -->
-        <section>
-            <Explainers />
-        </section>
 
     </main>
 </template>

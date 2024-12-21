@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bowlby+One&family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bowlby+One&family=Gochi+Hand&family=Passion+One:wght@400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +12,8 @@
     rotate: -30deg;
 }
 
+.problem-text{
+    rotate: -5deg;
+}
 
 
-/* .h1{--font-selector: Q1VTVE9NO0Flb25payBCb2xk; --framer-font-family: &quot;Aeonik Bold&quot;, &quot;Aeonik Bold Placeholder&quot;, sans-serif; --framer-font-size: 64px; --framer-letter-spacing: -1.7px; --framer-line-height: 1.16em; --framer-text-alignment: center; --framer-text-color: rgb(31, 31, 31);} */
